@@ -1,0 +1,25 @@
+exports.getRecordsByUserId = async (req, res, next) => {
+  try {
+    const Data = await beliverConcepts.findAll({
+      where: { id: req.params.beliverConceptsId, is_deleted: "0" },
+    });
+    if (!Data) {
+      return res.status(404).json({
+        status: 404,
+        message: "could not find result",
+      });
+    }
+    res.status(200).json({
+      message: "Result Fetched",
+      data: Data,
+    });
+  } catch (error) {
+    if (!error.statusCode) {
+      error.statusCode = 500;
+    }
+    next(error);
+    helper.logger.info(error);
+  }
+};
+
+exports.getRecordsById = async (req, res, next) => {
