@@ -60,10 +60,10 @@ const non_negotiable = sequelize.define('non_negotiable', {
     type: Sequelize.STRING,
     allowNull: true,
   },
-  fixed_cost_investment2: {
-    type: Sequelize.STRING,
-    allowNull: true,
-  },
+  // fixed_cost_investment2: {
+  //   type: Sequelize.STRING,
+  //   allowNull: true,
+  // },
   through_put: {
     type: Sequelize.STRING,
     allowNull: true,

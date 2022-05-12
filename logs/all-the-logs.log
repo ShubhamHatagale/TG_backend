@@ -42230,3 +42230,165 @@ notNull Violation: vilakshanMapTab1.vilakshan_form cannot be null
     }
   ]
 }
+[2022-05-11T14:51:41.037] [INFO] default - ValidationError [SequelizeValidationError]: notNull Violation: process.sr_no cannot be null
+    at InstanceValidator._validate (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async InstanceValidator._validateAndRunHooks (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:111:7)
+    at async InstanceValidator.validate (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:93:12)
+    at async model.save (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/model.js:3877:7)
+    at async Function.create (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/model.js:2207:12)
+    at async exports.postRecords (/home/shubham/Projects/Transgazination_Project/TG_backend/controllers/process.controller.js:104:25) {
+  errors: [
+    ValidationErrorItem {
+      message: 'process.sr_no cannot be null',
+      type: 'notNull Violation',
+      path: 'sr_no',
+      value: null,
+      origin: 'CORE',
+      instance: [process],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2022-05-11T16:05:17.422] [INFO] default - ValidationError [SequelizeValidationError]: notNull Violation: process.sr_no cannot be null
+    at InstanceValidator._validate (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:78:13)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async InstanceValidator._validateAndRunHooks (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:111:7)
+    at async InstanceValidator.validate (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:93:12)
+    at async model.save (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/model.js:3877:7)
+    at async Function.create (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/model.js:2207:12)
+    at async exports.postRecords (/home/shubham/Projects/Transgazination_Project/TG_backend/controllers/process.controller.js:104:25) {
+  errors: [
+    ValidationErrorItem {
+      message: 'process.sr_no cannot be null',
+      type: 'notNull Violation',
+      path: 'sr_no',
+      value: null,
+      origin: 'CORE',
+      instance: [process],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2022-05-11T16:05:26.946] [INFO] default - ValidationError [SequelizeValidationError]: notNull Violation: process.sr_no cannot be null
+    at InstanceValidator._validate (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:78:13)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async InstanceValidator._validateAndRunHooks (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:111:7)
+    at async InstanceValidator.validate (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:93:12)
+    at async model.save (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/model.js:3877:7)
+    at async Function.create (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/model.js:2207:12)
+    at async exports.postRecords (/home/shubham/Projects/Transgazination_Project/TG_backend/controllers/process.controller.js:104:25) {
+  errors: [
+    ValidationErrorItem {
+      message: 'process.sr_no cannot be null',
+      type: 'notNull Violation',
+      path: 'sr_no',
+      value: null,
+      origin: 'CORE',
+      instance: [process],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2022-05-11T16:07:49.771] [INFO] default - ValidationError [SequelizeValidationError]: notNull Violation: process.sr_no cannot be null
+    at InstanceValidator._validate (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:78:13)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async InstanceValidator._validateAndRunHooks (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:111:7)
+    at async InstanceValidator.validate (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:93:12)
+    at async model.save (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/model.js:3877:7)
+    at async Function.create (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/model.js:2207:12)
+    at async exports.postRecords (/home/shubham/Projects/Transgazination_Project/TG_backend/controllers/process.controller.js:104:25) {
+  errors: [
+    ValidationErrorItem {
+      message: 'process.sr_no cannot be null',
+      type: 'notNull Violation',
+      path: 'sr_no',
+      value: null,
+      origin: 'CORE',
+      instance: [process],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2022-05-11T16:47:21.249] [INFO] default - ValidationError [SequelizeValidationError]: notNull Violation: process.sr_no cannot be null,
+notNull Violation: process.step_decription cannot be null,
+notNull Violation: process.trasaction_time cannot be null,
+notNull Violation: process.resource_allocated cannot be null,
+notNull Violation: process.resource_name cannot be null
+    at InstanceValidator._validate (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:78:13)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async InstanceValidator._validateAndRunHooks (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:111:7)
+    at async InstanceValidator.validate (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/instance-validator.js:93:12)
+    at async model.save (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/model.js:3877:7)
+    at async Function.create (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/model.js:2207:12)
+    at async exports.postRecords (/home/shubham/Projects/Transgazination_Project/TG_backend/controllers/process.controller.js:104:25) {
+  errors: [
+    ValidationErrorItem {
+      message: 'process.sr_no cannot be null',
+      type: 'notNull Violation',
+      path: 'sr_no',
+      value: null,
+      origin: 'CORE',
+      instance: [process],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    },
+    ValidationErrorItem {
+      message: 'process.step_decription cannot be null',
+      type: 'notNull Violation',
+      path: 'step_decription',
+      value: null,
+      origin: 'CORE',
+      instance: [process],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    },
+    ValidationErrorItem {
+      message: 'process.trasaction_time cannot be null',
+      type: 'notNull Violation',
+      path: 'trasaction_time',
+      value: null,
+      origin: 'CORE',
+      instance: [process],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    },
+    ValidationErrorItem {
+      message: 'process.resource_allocated cannot be null',
+      type: 'notNull Violation',
+      path: 'resource_allocated',
+      value: null,
+      origin: 'CORE',
+      instance: [process],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    },
+    ValidationErrorItem {
+      message: 'process.resource_name cannot be null',
+      type: 'notNull Violation',
+      path: 'resource_name',
+      value: null,
+      origin: 'CORE',
+      instance: [process],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}

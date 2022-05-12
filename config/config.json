@@ -3,7 +3,7 @@
     "username": "root",
     "password": null,
     "database": "Amplioso_Sprint",
-    "host": "http://localhost:9000/",
+    "host": "https://parivartan.transganization.com/nodejs/",
     "dialect": "mysql"
   },
   "test": {
