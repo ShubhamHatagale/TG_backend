@@ -42392,3 +42392,36 @@ notNull Violation: process.resource_name cannot be null
     }
   ]
 }
+[2022-05-22T18:25:53.912] [INFO] default - ReferenceError: features is not defined
+    at exports.postRecords (/home/shubham/Projects/Transgazination_Project/TG_backend/controllers/drishti_financial_year.controller.js:82:17)
+    at Layer.handle [as handle_request] (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:47:12)
+[2022-05-22T18:43:18.742] [INFO] default - ReferenceError: features is not defined
+    at exports.updateRecords (/home/shubham/Projects/Transgazination_Project/TG_backend/controllers/drishti_financial_year.controller.js:165:17)
+    at Layer.handle [as handle_request] (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:281:22
+    at param (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:354:14)
+    at param (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:410:3)
+    at next (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:275:10)
+[2022-05-22T18:43:43.311] [INFO] default - ReferenceError: features is not defined
+    at exports.updateRecords (/home/shubham/Projects/Transgazination_Project/TG_backend/controllers/drishti_financial_year.controller.js:165:17)
+    at Layer.handle [as handle_request] (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:281:22
+    at param (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:354:14)
+    at param (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:410:3)
+    at next (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:275:10)

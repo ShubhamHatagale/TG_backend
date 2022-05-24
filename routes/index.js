@@ -32,6 +32,7 @@ const Process = require('./process.route');
 const parivartan_userRoute = require('./parivartan_user.route');
 const admin_login = require('./admin_login.route');
 const urjaChar = require('./urjaChar.route');
+const drishti_financial_year = require('./drishti_financial_year.route');
 
 module.exports = (router) => {
     reflectionRoutes(router);
@@ -68,6 +69,7 @@ module.exports = (router) => {
     parivartan_userRoute(router);
     admin_login(router);
     urjaChar(router);
+    drishti_financial_year(router);
 
     return router;
 };
