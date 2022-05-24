@@ -40,6 +40,7 @@ exports.getRecordsByUserId = async (req, res, next) => {
     }
     res.status(200).json({
       message: "Result Fetched",
+      status:200,
       data: Data,
     });
   } catch (error) {
@@ -64,7 +65,9 @@ exports.getRecordsById = async (req, res, next) => {
     }
     res.status(200).json({
       message: "Result Fetched",
-      data: Data
+      data: Data,
+      status:200,
+
     })
   } catch (error) {
     if (!error.statusCode) {

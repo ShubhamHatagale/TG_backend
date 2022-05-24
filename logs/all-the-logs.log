@@ -42425,3 +42425,968 @@ notNull Violation: process.resource_name cannot be null
     at param (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:365:14)
     at Function.process_params (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:410:3)
     at next (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/express/lib/router/index.js:275:10)
+[2022-05-24T10:12:52.556] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:12:52.569] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti_financial_year' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti_financial_year' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti_financial_year' doesn't exist",
+    sql: "SELECT `id`, `features`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti_financial_year` AS `drishti_financial_year` WHERE `drishti_financial_year`.`id` = '1' AND `drishti_financial_year`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti_financial_year' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti_financial_year' doesn't exist",
+    sql: "SELECT `id`, `features`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti_financial_year` AS `drishti_financial_year` WHERE `drishti_financial_year`.`id` = '1' AND `drishti_financial_year`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `features`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti_financial_year` AS `drishti_financial_year` WHERE `drishti_financial_year`.`id` = '1' AND `drishti_financial_year`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:12:52.603] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:12:53.845] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:12:53.866] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:13:07.539] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = 'null' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = 'null' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = 'null' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:13:38.767] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:13:38.775] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:13:41.721] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:13:41.732] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:13:41.756] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti_financial_year' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti_financial_year' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti_financial_year' doesn't exist",
+    sql: "SELECT `id`, `features`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti_financial_year` AS `drishti_financial_year` WHERE `drishti_financial_year`.`id` = '2' AND `drishti_financial_year`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti_financial_year' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti_financial_year' doesn't exist",
+    sql: "SELECT `id`, `features`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti_financial_year` AS `drishti_financial_year` WHERE `drishti_financial_year`.`id` = '2' AND `drishti_financial_year`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `features`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti_financial_year` AS `drishti_financial_year` WHERE `drishti_financial_year`.`id` = '2' AND `drishti_financial_year`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:13:43.923] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:13:43.937] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:13:56.847] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:13:56.854] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:13:56.856] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti_financial_year' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti_financial_year' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti_financial_year' doesn't exist",
+    sql: "SELECT `id`, `features`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti_financial_year` AS `drishti_financial_year` WHERE `drishti_financial_year`.`id` = '2' AND `drishti_financial_year`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti_financial_year' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti_financial_year' doesn't exist",
+    sql: "SELECT `id`, `features`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti_financial_year` AS `drishti_financial_year` WHERE `drishti_financial_year`.`id` = '2' AND `drishti_financial_year`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `features`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti_financial_year` AS `drishti_financial_year` WHERE `drishti_financial_year`.`id` = '2' AND `drishti_financial_year`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:14:00.969] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:14:00.972] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:14:19.122] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Prepare.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: 'INSERT INTO `drishti` (`id`,`drishti_parameter`,`year_1`,`year_2`,`year_3`,`year_4`,`year_5`,`email_id`,`verified`,`created_by`,`created_on`,`is_deleted`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      'abc',
+      '200',
+      '30',
+      '40',
+      '50',
+      '60',
+      '2',
+      '0',
+      '2',
+      '2022-05-24 04:44:19',
+      '0',
+      '2022-05-24 04:44:19',
+      '2022-05-24 04:44:19'
+    ]
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Prepare.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: 'INSERT INTO `drishti` (`id`,`drishti_parameter`,`year_1`,`year_2`,`year_3`,`year_4`,`year_5`,`email_id`,`verified`,`created_by`,`created_on`,`is_deleted`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      'abc',
+      '200',
+      '30',
+      '40',
+      '50',
+      '60',
+      '2',
+      '0',
+      '2',
+      '2022-05-24 04:44:19',
+      '0',
+      '2022-05-24 04:44:19',
+      '2022-05-24 04:44:19'
+    ]
+  },
+  sql: 'INSERT INTO `drishti` (`id`,`drishti_parameter`,`year_1`,`year_2`,`year_3`,`year_4`,`year_5`,`email_id`,`verified`,`created_by`,`created_on`,`is_deleted`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?,?,?,?);',
+  parameters: [
+    'abc',
+    '200',
+    '30',
+    '40',
+    '50',
+    '60',
+    '2',
+    '0',
+    '2',
+    '2022-05-24 04:44:19',
+    '0',
+    '2022-05-24 04:44:19',
+    '2022-05-24 04:44:19'
+  ]
+}
+[2022-05-24T10:14:19.164] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '1' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}
+[2022-05-24T10:14:19.182] [INFO] default - DatabaseError [SequelizeDatabaseError]: Table 'transganization_db.drishti' doesn't exist
+    at Query.formatError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.run (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/sequelize/lib/dialects/mysql/query.js:54:18)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  parent: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  original: Error: Table 'transganization_db.drishti' doesn't exist
+      at Packet.asError (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packets/packet.js:712:17)
+      at Query.execute (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/commands/command.js:28:26)
+      at Connection.handlePacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:425:32)
+      at PacketParser.onPacket (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:75:12)
+      at PacketParser.executeStart (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/shubham/Projects/Transgazination_Project/TG_backend/node_modules/mysql2/lib/connection.js:82:25)
+      at Socket.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+      at readableAddChunk (_stream_readable.js:271:9)
+      at Socket.Readable.push (_stream_readable.js:212:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'transganization_db.drishti' doesn't exist",
+    sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+    parameters: undefined
+  },
+  sql: "SELECT `id`, `drishti_parameter`, `year_1`, `year_2`, `year_3`, `year_4`, `year_5`, `email_id`, `verified`, `created_by`, `created_on`, `updated_by`, `updated_on`, `is_deleted`, `createdAt`, `updatedAt` FROM `drishti` AS `drishti` WHERE `drishti`.`email_id` = '2' AND `drishti`.`is_deleted` = '0';",
+  parameters: undefined,
+  statusCode: 500
+}

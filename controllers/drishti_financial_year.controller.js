@@ -40,6 +40,7 @@ exports.getRecordsByUserId = async (req, res, next) => {
     }
     res.status(200).json({
       message: "Result Fetched",
+      status: 200,
       data: Data,
     });
   } catch (error) {
@@ -75,33 +76,6 @@ exports.getRecordsById = async (req, res, next) => {
   }
 }
 
-exports.postFinancialRecords = async (req, res, next) => {
-  try {
-    const DrishtiData = await Drishti.create({
-      features: req.body.features,
-      email_id: req.body.email_id,
-      created_by: req.body.created_by,
-      updated_by: req.body.updated_by,
-      created_on: (moment().tz(TZ).utcOffset("+05:30").format())
-    })
-    if (!DrishtiData) {
-      return res.status(200).json({
-        status: 404,
-        message: 'No data found'
-      })
-    }
-    res.status(200).json({
-      status: 200,
-      message: 'Post created successfully!',
-    });
-  } catch (error) {
-    helper.logger.info(error)
-    return res.status(500).send({
-      message: 'Unable to Post data',
-      status: 500
-    });
-  }
-};
 
 exports.postRecords = async (req, res, next) => {
   try {
@@ -131,33 +105,6 @@ exports.postRecords = async (req, res, next) => {
   }
 };
 
-exports.postFinancialRecords = async (req, res, next) => {
-  try {
-    const DrishtiData = await Drishti.create({
-      features: features,
-      email_id: req.body.email_id,
-      created_by: req.body.created_by,
-      updated_by: req.body.updated_by,
-      created_on: (moment().tz(TZ).utcOffset("+05:30").format())
-    })
-    if (!DrishtiData) {
-      return res.status(200).json({
-        status: 404,
-        message: 'No data found'
-      })
-    }
-    res.status(200).json({
-      status: 200,
-      message: 'Post created successfully!',
-    });
-  } catch (error) {
-    helper.logger.info(error)
-    return res.status(500).send({
-      message: 'Unable to Post data',
-      status: 500
-    });
-  }
-};
 
 exports.updateRecords = async (req, res, next) => {
   try {
@@ -167,7 +114,7 @@ exports.updateRecords = async (req, res, next) => {
       updated_by: req.body.updated_by,
       updated_on: (moment().tz(TZ).utcOffset("+05:30").format()),
     },
-      { where: { id: req.params.drishtiId } });
+      { where: { email_id: req.params.drishtiId } });
     if (!DrishtiData) {
       return res.status(200).json({
         status: 404,
