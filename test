@@ -1,5 +1,5 @@
 exports.getRecordsByUserId = async (req, res, next) => {
-  try {
+   try {
     const Data = await beliverConcepts.findAll({
       where: { id: req.params.beliverConceptsId, is_deleted: "0" },
     });
